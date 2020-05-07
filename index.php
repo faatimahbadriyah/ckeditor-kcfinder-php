@@ -56,10 +56,11 @@
 
 <script>
     CKEDITOR.replace('content',{
-        filebrowserBrowseUrl: './ckfinder/ckfinder.html',
-        filebrowserImageBrowseUrl: './ckfinder/ckfinder.html?type=Images',
-        filebrowserUploadUrl: './ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-        filebrowserImageUploadUrl: './ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
-
+        filebrowserBrowseUrl:'./kcfinder/browse.php?type=files',
+        filebrowserImageBrowseUrl:'./kcfinder/browse.php?type=images',
+        filebrowserFlashBrowseUrl:'./kcfinder/browse.php?type=flash',
+        filebrowserUploadUrl:'./kcfinder/upload.php?type=files',
+        filebrowserImageUploadUrl:'./kcfinder/upload.php?type=images',
+        filebrowserFlashUploadUrl:'./kcfinder/upload.php?type=flash',
     });
 </script>

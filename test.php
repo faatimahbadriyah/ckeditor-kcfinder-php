@@ -8,7 +8,7 @@ if($conn){
 	echo "koneksi gagal.<br/>";
 }
 
-$sql = "INSERT INTO soal VALUES ('145', '".$_POST['content']."');";
+$sql = "INSERT INTO soal VALUES ('100', '".$_POST['content']."');";
 
 
 if (mysqli_query($conn, $sql)) {
