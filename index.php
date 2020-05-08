@@ -7,20 +7,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- <script src="./ckeditor/full_ckeditor/ckeditor.js" ></script> -->
-    <script src="http://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+    <script src="http://cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 </head>
 
 <body>
     <?php 
     $conn = mysqli_connect("localhost","root","","cbt");
-    if($conn){
-        echo "koneksi host berhasil.<br/>";
-    }else{
-        echo "koneksi gagal.<br/>";
-    }
+    // if($conn){
+    //     echo "koneksi host berhasil.<br/>";
+    // }else{
+    //     echo "koneksi gagal.<br/>";
+    // }
     
 
-    $sql = "SELECT id, pertanyaan FROM soal where id = '100'";
+    $sql = "SELECT id, pertanyaan FROM soal where id = '101'";
     $result = mysqli_query($conn, $sql);
     $a = '';
 
